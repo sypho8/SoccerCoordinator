@@ -22,6 +22,7 @@
 		6532D5DF1DDC887A00C5C776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6532D5E21DDC887A00C5C776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6532D5E41DDC887A00C5C776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6532D5EA1DDC88B000C5C776 /* SoccerCoordinator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SoccerCoordinator.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				6532D5DF1DDC887A00C5C776 /* Assets.xcassets */,
 				6532D5E11DDC887A00C5C776 /* LaunchScreen.storyboard */,
 				6532D5E41DDC887A00C5C776 /* Info.plist */,
+				6532D5EA1DDC88B000C5C776 /* SoccerCoordinator.playground */,
 			);
 			path = SoccerCoordinator;
 			sourceTree = "<group>";

@@ -18,6 +18,45 @@ players.append(["name": "Phillip Helm", "heightInInches": 44, "soccerExperience"
 players.append(["name": "Les Clay", "heightInInches": 42, "soccerExperience": true, "guardianNames": "Wynonna Brown"])
 players.append(["name": "Herschel Krustofski", "heightInInches": 45, "soccerExperience": true, "guardianNames": "Hyman and Rachel Krustofski"])
 
+let numberOfTeams = 3
+
+var teamNum1: [[String: Any]] = []
+var teamNum2: [[String: Any]] = []
+var teamNum3: [[String: Any]] = []
+
+var teamIndicatorWithExp = 1
+var teamIndicatorWithoutExp = 1
+
 for player in players {
+    
+    let playerIsExperienced = player["soccerExperience"] as! Bool
+    
+    if playerIsExperienced {
+        
+        switch teamIndicatorWithExp {
+        case 1: teamNum1.append(player)
+        case 2: teamNum2.append(player)
+        case 3: teamNum3.append(player)
+        default:
+            teamNum1.append(player)
+            teamIndicatorWithExp = 1
+        }
+        
+        teamIndicatorWithExp += 1
+        
+    } else {
+        
+        switch teamIndicatorWithoutExp {
+        case 1: teamNum1.append(player)
+        case 2: teamNum2.append(player)
+        case 3: teamNum3.append(player)
+        default:
+            teamNum1.append(player)
+            teamIndicatorWithoutExp = 1
+        }
+        
+        teamIndicatorWithoutExp += 1
+        
+    }
     
 }

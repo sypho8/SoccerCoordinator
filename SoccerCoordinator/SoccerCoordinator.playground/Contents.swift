@@ -1,4 +1,4 @@
-//
+//Initializing players array, adding players manually
 var players: [[String: Any]] = []
 players.append(["name": "Joe Smith", "heightInInches": 42, "soccerExperience": true, "guardianNames": "Jim and Jan Smith"])
 players.append(["name": "Jill Tanner", "heightInInches": 36, "soccerExperience": true, "guardianNames": "Clara Tanner"])
@@ -24,11 +24,11 @@ var teamDragons: [[String: Any]] = []
 var teamSharks: [[String: Any]] = []
 var teamRaptors: [[String: Any]] = []
 
-//
+//Initializing team indicators (indicates the ID of the next team to be assigned with a player, with experience or without)
 var teamIndicatorWithExp = 1
 var teamIndicatorWithoutExp = 1
 
-//
+//Iterating through all players and assigning them to three with the same number of experienced players
 for player in players {
     
     let playerIsExperienced = player["soccerExperience"] as! Bool
@@ -81,7 +81,7 @@ func generateLetter(forPlayer player: [String: Any], inTeam team: String) -> Str
     
 }
 
-//Iterating through all three teams of players in order to generate a personalized letters to their guardians
+//Iterating through all three teams of players in order to generate a personalized letters to the guardians
 for player in teamDragons {
     print(generateLetter(forPlayer: player, inTeam: "Dragons"))
 }

@@ -63,13 +63,14 @@ for player in players {
     
 }
 
-//Generating a personalized letter to the guardians
+//Generating a personalized letter to the guardians. The function receives the player and his team as agruments and returns the letter
 func generateLetter(forPlayer player: [String: Any], inTeam team: String) -> String {
     
     let playerName = player["name"] as! String
     let playerGuardians = player["guardianNames"] as! String
     var teamPracticeDateAndTime = ""
     
+    //Setting the team practice date and time according to the current team
     switch team {
     case "Dragons": teamPracticeDateAndTime = "March 17, 1pm"
     case "Sharks": teamPracticeDateAndTime = "March 17, 3pm"
